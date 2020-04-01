@@ -1,0 +1,3 @@
+record(ao, "caLabTest:DELAY") { field(SCAN, "Passive")}
+record(ao, "caLabTest:PUMPROT") { field(SCAN, "Passive")}
+record(ao, "caLabTest:PROBEROT") { field(SCAN, "Passive")}
