@@ -20,7 +20,9 @@
 			<Item Name="wait4noti.vi" Type="VI" URL="../subvi/wait4noti.vi"/>
 		</Item>
 		<Item Name="EPICS_test.vi" Type="VI" URL="../EPICS_test.vi"/>
+		<Item Name="gauss.vi" Type="VI" URL="../subvi/gauss.vi"/>
 		<Item Name="METIS_main_004.vi" Type="VI" URL="../METIS_main_004.vi"/>
+		<Item Name="METIS_TestIOC.vi" Type="VI" URL="../METIS_TestIOC.vi"/>
 		<Item Name="Newport ESP301.lvlib" Type="Library" URL="../libraries/Newport ESP301/Newport ESP301.lvlib"/>
 		<Item Name="ZaberTSeries.lvlib" Type="Library" URL="../libraries/ZaberTSeries/ZaberTSeries.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -103,7 +105,6 @@
 				<Item Name="PV Info.ctl" Type="VI" URL="/&lt;userlib&gt;/caLab/PV Info.ctl"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -267,7 +268,6 @@
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
-				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
@@ -299,7 +299,6 @@
 				<Item Name="Write File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write File+ (string).vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
-			<Item Name="CaLabSoftIOC.vi" Type="VI" URL="/Program Files (x86)/National Instruments/LabVIEW 2019/user.lib/caLab/CaLabSoftIOC.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>

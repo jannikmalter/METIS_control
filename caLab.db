@@ -1,0 +1,5 @@
+record(waveform, "SCDLD:CPProjectionData_History_P0_2D") { field(DESC, "no description") field(PINI, "YES") field(NELM, "23000") field(FTVL, "DOUBLE")}
+record(ai, "SCDLD:cam1:CPSize_P0_2D_A2") { field(DESC, "no description") field(PINI, "YES")}
+record(ai, "SCDLD:cam1:CPSize_P0_2D_A9") { field(DESC, "no description") field(PINI, "YES")}
+record(ai, "SCDLD:cam1:CPBin_P0_2D_A9") { field(DESC, "no description") field(PINI, "YES")}
+record(ai, "SCDLD:cam1:CPMin_P0_2D_A9") { field(DESC, "no description") field(PINI, "YES")}
