@@ -17,13 +17,14 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="subvi" Type="Folder">
 			<Item Name="create scan vectr.vi" Type="VI" URL="../subvi/create scan vectr.vi"/>
-			<Item Name="create scan vectr2.vi" Type="VI" URL="../subvi/create scan vectr2.vi"/>
+			<Item Name="create scan vectr2.1.vi" Type="VI" URL="../subvi/create scan vectr2.1.vi"/>
 			<Item Name="ESP_Q_abs.vi" Type="VI" URL="../subvi/ESP_Q_abs.vi"/>
 			<Item Name="ESP_Q_vel.vi" Type="VI" URL="../subvi/ESP_Q_vel.vi"/>
 			<Item Name="mm2time001.vi" Type="VI" URL="../subvi/mm2time001.vi"/>
 			<Item Name="time2mm001.vi" Type="VI" URL="../subvi/time2mm001.vi"/>
 			<Item Name="wait4noti.vi" Type="VI" URL="../subvi/wait4noti.vi"/>
 		</Item>
+		<Item Name="acquire_and_wait.vi" Type="VI" URL="../subvi/acquire_and_wait.vi"/>
 		<Item Name="client lib.lvlib" Type="Library" URL="../client lib.lvlib"/>
 		<Item Name="EPICS_test.vi" Type="VI" URL="../EPICS_test.vi"/>
 		<Item Name="gauss.vi" Type="VI" URL="../subvi/gauss.vi"/>
@@ -32,16 +33,87 @@
 		<Item Name="METIS_TestIOC_simple.vi" Type="VI" URL="../METIS_TestIOC_simple.vi"/>
 		<Item Name="Newport ESP301.lvlib" Type="Library" URL="../libraries/Newport ESP301/Newport ESP301.lvlib"/>
 		<Item Name="std2fwhm.vi" Type="VI" URL="../subvi/std2fwhm.vi"/>
+		<Item Name="Untitled 2.vi" Type="VI" URL="../../../../../../Users/janni/Desktop/Untitled 2.vi"/>
+		<Item Name="zaber_readpos.vi" Type="VI" URL="../libraries/ZaberTSeries/zaber_readpos.vi"/>
 		<Item Name="ZaberTSeries.lvlib" Type="Library" URL="../libraries/ZaberTSeries/ZaberTSeries.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
+				<Item Name="calab.dll" Type="Document" URL="/&lt;userlib&gt;/caLab/Lib/calab.dll"/>
 				<Item Name="CaLabGet.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/CaLabGet.vi"/>
+				<Item Name="CaLabGet_Main.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/CaLabGet_Main.vi"/>
+				<Item Name="CaLabGet_Main_Initialized.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/CaLabGet_Main_Initialized.vi"/>
 				<Item Name="CaLabPut.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/CaLabPut.vi"/>
 				<Item Name="CaLabPut_Main.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/CaLabPut_Main.vi"/>
+				<Item Name="CaLabPut_Main_Initialized.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/CaLabPut_Main_Initialized.vi"/>
+				<Item Name="Get_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Get_PV-1D-I.vi"/>
+				<Item Name="Get_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Get_PV-1D.vi"/>
+				<Item Name="Get_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Get_PV-I.vi"/>
 				<Item Name="Get_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Get_PV.vi"/>
+				<Item Name="Put_Boolean-1D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_Boolean-1D_PV-1D-I.vi"/>
+				<Item Name="Put_Boolean-1D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_Boolean-1D_PV-1D.vi"/>
+				<Item Name="Put_Boolean-1D_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_Boolean-1D_PV-I.vi"/>
+				<Item Name="Put_Boolean-1D_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_Boolean-1D_PV.vi"/>
+				<Item Name="Put_Boolean-2D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_Boolean-2D_PV-1D-I.vi"/>
+				<Item Name="Put_Boolean-2D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_Boolean-2D_PV-1D.vi"/>
+				<Item Name="Put_Boolean_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_Boolean_PV-I.vi"/>
+				<Item Name="Put_Boolean_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_Boolean_PV.vi"/>
+				<Item Name="Put_DBL-1D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_DBL-1D_PV-1D-I.vi"/>
+				<Item Name="Put_DBL-1D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_DBL-1D_PV-1D.vi"/>
+				<Item Name="Put_DBL-1D_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_DBL-1D_PV-I.vi"/>
+				<Item Name="Put_DBL-1D_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_DBL-1D_PV.vi"/>
+				<Item Name="Put_DBL-2D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_DBL-2D_PV-1D-I.vi"/>
+				<Item Name="Put_DBL-2D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_DBL-2D_PV-1D.vi"/>
+				<Item Name="Put_DBL_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_DBL_PV-I.vi"/>
 				<Item Name="Put_DBL_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_DBL_PV.vi"/>
+				<Item Name="Put_I8-1D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I8-1D_PV-1D-I.vi"/>
+				<Item Name="Put_I8-1D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I8-1D_PV-1D.vi"/>
+				<Item Name="Put_I8-1D_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I8-1D_PV-I.vi"/>
+				<Item Name="Put_I8-1D_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I8-1D_PV.vi"/>
+				<Item Name="Put_I8-2D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I8-2D_PV-1D-I.vi"/>
+				<Item Name="Put_I8-2D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I8-2D_PV-1D.vi"/>
+				<Item Name="Put_I8_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I8_PV-I.vi"/>
+				<Item Name="Put_I8_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I8_PV.vi"/>
+				<Item Name="Put_I16-1D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I16-1D_PV-1D-I.vi"/>
+				<Item Name="Put_I16-1D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I16-1D_PV-1D.vi"/>
+				<Item Name="Put_I16-1D_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I16-1D_PV-I.vi"/>
+				<Item Name="Put_I16-1D_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I16-1D_PV.vi"/>
+				<Item Name="Put_I16-2D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I16-2D_PV-1D-I.vi"/>
+				<Item Name="Put_I16-2D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I16-2D_PV-1D.vi"/>
+				<Item Name="Put_I16_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I16_PV-I.vi"/>
+				<Item Name="Put_I16_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I16_PV.vi"/>
+				<Item Name="Put_I32-1D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I32-1D_PV-1D-I.vi"/>
 				<Item Name="Put_I32-1D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I32-1D_PV-1D.vi"/>
+				<Item Name="Put_I32-1D_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I32-1D_PV-I.vi"/>
+				<Item Name="Put_I32-1D_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I32-1D_PV.vi"/>
+				<Item Name="Put_I32-2D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I32-2D_PV-1D-I.vi"/>
+				<Item Name="Put_I32-2D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I32-2D_PV-1D.vi"/>
+				<Item Name="Put_I32_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I32_PV-I.vi"/>
 				<Item Name="Put_I32_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I32_PV.vi"/>
+				<Item Name="Put_I64-1D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I64-1D_PV-1D-I.vi"/>
+				<Item Name="Put_I64-1D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I64-1D_PV-1D.vi"/>
+				<Item Name="Put_I64-1D_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I64-1D_PV-I.vi"/>
+				<Item Name="Put_I64-1D_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I64-1D_PV.vi"/>
+				<Item Name="Put_I64-2D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I64-2D_PV-1D-I.vi"/>
+				<Item Name="Put_I64-2D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I64-2D_PV-1D.vi"/>
+				<Item Name="Put_I64_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I64_PV-I.vi"/>
+				<Item Name="Put_I64_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_I64_PV.vi"/>
+				<Item Name="Put_SGL-1D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_SGL-1D_PV-1D-I.vi"/>
+				<Item Name="Put_SGL-1D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_SGL-1D_PV-1D.vi"/>
+				<Item Name="Put_SGL-1D_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_SGL-1D_PV-I.vi"/>
+				<Item Name="Put_SGL-1D_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_SGL-1D_PV.vi"/>
+				<Item Name="Put_SGL-2D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_SGL-2D_PV-1D-I.vi"/>
+				<Item Name="Put_SGL-2D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_SGL-2D_PV-1D.vi"/>
+				<Item Name="Put_SGL_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_SGL_PV-I.vi"/>
+				<Item Name="Put_SGL_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_SGL_PV.vi"/>
+				<Item Name="Put_String-1D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_String-1D_PV-1D-I.vi"/>
+				<Item Name="Put_String-1D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_String-1D_PV-1D.vi"/>
+				<Item Name="Put_String-1D_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_String-1D_PV-I.vi"/>
+				<Item Name="Put_String-1D_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_String-1D_PV.vi"/>
+				<Item Name="Put_String-2D_PV-1D-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_String-2D_PV-1D-I.vi"/>
+				<Item Name="Put_String-2D_PV-1D.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_String-2D_PV-1D.vi"/>
+				<Item Name="Put_String_PV-I.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_String_PV-I.vi"/>
+				<Item Name="Put_String_PV.vi" Type="VI" URL="/&lt;userlib&gt;/caLab/Private/Put_String_PV.vi"/>
+				<Item Name="PV Info.ctl" Type="VI" URL="/&lt;userlib&gt;/caLab/PV Info.ctl"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -243,7 +315,6 @@
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="zaber_readpos.vi" Type="VI" URL="../libraries/ZaberTSeries/zaber_readpos.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

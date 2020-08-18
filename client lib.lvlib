@@ -12,12 +12,13 @@
 		<Property Name="Network:PointsPerWaveform" Type="Str">1</Property>
 		<Property Name="Network:ProjectBinding" Type="Str">True</Property>
 		<Property Name="Network:ProjectPath" Type="Str">My Computer\client lib.lvlib\EPICS Client1\SCDLD:CPProjectionData_History_P0_2D:ArrayData\VAL</Property>
+		<Property Name="Network:SingleWriter" Type="Str">False</Property>
 		<Property Name="Network:UseBinding" Type="Str">True</Property>
 		<Property Name="Network:UseBuffering" Type="Str">True</Property>
 		<Property Name="numTypedefs" Type="UInt">0</Property>
 		<Property Name="Path" Type="Str">/ETest.lvproj/My Computer/EPICS Client/client lib.lvlib/</Property>
 		<Property Name="type" Type="Str">Network</Property>
-		<Property Name="typeDesc" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!R,1!!!#!!A!!!!!!#!!5!#A!!$!"!!!(`````!!!!!1!"!!!!!4`Q!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!""01!!!#!!A!!!!!!#!!V!#A!(4H6N:8*J9Q!=1%!!!@````]!!!^"=H*B?3"P:C"%&lt;X6C&lt;'5!!1!"!!!!!!!!!!!!!!!!</Property>
 		<Property Name="varSourceProjectPath" Type="Str">My Computer\client lib.lvlib\EPICS Client1\</Property>
 		<Property Name="varSourceProjectSubPath" Type="Str">SCDLD:CPProjectionData_History_P0_2D:ArrayData\VAL</Property>
 	</Item>
