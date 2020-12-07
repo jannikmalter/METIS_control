@@ -4,7 +4,11 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
-	<Item Name="CPProjectionData" Type="Variable">
+	<Item Name="EPICS Client1" Type="IO Server">
+		<Property Name="atrb" Type="Str">U!%!!!Q1!!!&amp;!!!!"B!!!"E!!!"4!%-!2!"-!%1!/A"D!'%!&lt;1!R!$I!1Q"1!%)!;1"O!&amp;]!5!!Q!&amp;]!-A"%!&amp;]!11!Z!!91!!!)!!!!6A""!%Q!#1!U!$A!$1!+!!91!!!:!!!!5Q"$!%1!4!"%!$I!9Q"B!'U!-1![!%-!5!".!'E!&lt;A"@!&amp;!!-!"@!$)!2!"@!%%!/1!'%!!!#!!!!&amp;9!11"-!!E!.!!Y!!U!#A!'%!!!'A!!!&amp;-!1Q"%!%Q!2!![!'-!91"N!$%!/A"$!&amp;!!5Q"J!(I!:1"@!&amp;!!-!"@!$)!2!"@!%%!-A!'%!!!#!!!!&amp;9!11"-!!E!.!!Y!!U!#A!'%!!!'A!!!&amp;-!1Q"%!%Q!2!![!'-!91"N!$%!/A"$!&amp;!!5Q"J!(I!:1"@!&amp;!!-!"@!$)!2!"@!%%!/1!'%!!!#!!!!&amp;9!11"-!!E!.!!Y!!U!#A!'%!!!,A!!!&amp;-!1Q"%!%Q!2!![!%-!5!"1!()!&lt;Q"K!'5!9Q"U!'E!&lt;Q"O!%1!91"U!'%!8Q")!'E!=Q"U!']!=A"Z!&amp;]!5!!Q!&amp;]!-A"%!$I!11"S!()!91"Z!%1!91"U!'%!"B!!!!A!!!"7!%%!4!!*!$5!.Q!.!!I!</Property>
+		<Property Name="className" Type="Str">EPICS Client</Property>
+	</Item>
+	<Item Name="VAL" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
 		<Property Name="Network:AccessType" Type="Str">read/write</Property>
 		<Property Name="Network:BuffSize" Type="Str">50</Property>
@@ -12,19 +16,13 @@
 		<Property Name="Network:PointsPerWaveform" Type="Str">1</Property>
 		<Property Name="Network:ProjectBinding" Type="Str">True</Property>
 		<Property Name="Network:ProjectPath" Type="Str">My Computer\client lib.lvlib\EPICS Client1\SCDLD:CPProjectionData_History_P0_2D:ArrayData\VAL</Property>
-		<Property Name="Network:SingleWriter" Type="Str">False</Property>
 		<Property Name="Network:UseBinding" Type="Str">True</Property>
 		<Property Name="Network:UseBuffering" Type="Str">True</Property>
 		<Property Name="numTypedefs" Type="UInt">0</Property>
-		<Property Name="Path" Type="Str">/ETest.lvproj/My Computer/EPICS Client/client lib.lvlib/</Property>
 		<Property Name="type" Type="Str">Network</Property>
-		<Property Name="typeDesc" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!""01!!!#!!A!!!!!!#!!V!#A!(4H6N:8*J9Q!=1%!!!@````]!!!^"=H*B?3"P:C"%&lt;X6C&lt;'5!!1!"!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!R,1!!!#!!A!!!!!!#!!5!#A!!$!"!!!(`````!!!!!1!"!!!!!4`Q!!!!!!!!!!!!!!!!!!!</Property>
 		<Property Name="varSourceProjectPath" Type="Str">My Computer\client lib.lvlib\EPICS Client1\</Property>
 		<Property Name="varSourceProjectSubPath" Type="Str">SCDLD:CPProjectionData_History_P0_2D:ArrayData\VAL</Property>
-	</Item>
-	<Item Name="EPICS Client1" Type="IO Server">
-		<Property Name="atrb" Type="Str">U!%!!!Q1!!!&amp;!!!!"B!!!"E!!!"4!%-!2!"-!%1!/A"D!'%!&lt;1!R!$I!1Q"1!%)!;1"O!&amp;]!5!!Q!&amp;]!-A"%!&amp;]!11!Z!!91!!!)!!!!6A""!%Q!#1!U!$A!$1!+!!91!!!:!!!!5Q"$!%1!4!"%!$I!9Q"B!'U!-1![!%-!5!".!'E!&lt;A"@!&amp;!!-!"@!$)!2!"@!%%!/1!'%!!!#!!!!&amp;9!11"-!!E!.!!Y!!U!#A!'%!!!'A!!!&amp;-!1Q"%!%Q!2!![!'-!91"N!$%!/A"$!&amp;!!5Q"J!(I!:1"@!&amp;!!-!"@!$)!2!"@!%%!-A!'%!!!#!!!!&amp;9!11"-!!E!.!!Y!!U!#A!'%!!!'A!!!&amp;-!1Q"%!%Q!2!![!'-!91"N!$%!/A"$!&amp;!!5Q"J!(I!:1"@!&amp;!!-!"@!$)!2!"@!%%!/1!'%!!!#!!!!&amp;9!11"-!!E!.!!Y!!U!#A!'%!!!,A!!!&amp;-!1Q"%!%Q!2!![!%-!5!"1!()!&lt;Q"K!'5!9Q"U!'E!&lt;Q"O!%1!91"U!'%!8Q")!'E!=Q"U!']!=A"Z!&amp;]!5!!Q!&amp;]!-A"%!$I!11"S!()!91"Z!%1!91"U!'%!"B!!!!A!!!"7!%%!4!!*!$5!.Q!.!!I!</Property>
-		<Property Name="className" Type="Str">EPICS Client</Property>
 	</Item>
 	<Item Name="Xbin" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
@@ -35,9 +33,9 @@
 		<Property Name="Network:ProjectBinding" Type="Str">True</Property>
 		<Property Name="Network:ProjectPath" Type="Str">My Computer\client lib.lvlib\EPICS Client1\SCDLD:cam1:CPBin_P0_2D_A9\VAL</Property>
 		<Property Name="Network:UseBinding" Type="Str">True</Property>
-		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">True</Property>
 		<Property Name="numTypedefs" Type="UInt">0</Property>
-		<Property Name="Path" Type="Str">/ETest.lvproj/My Computer/EPICS Client/client lib.lvlib/</Property>
+		<Property Name="Path" Type="Str">/METIS_control.lvproj/My Computer/client lib.lvlib/</Property>
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typeDesc" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!B(1!!!#!!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 		<Property Name="varSourceProjectPath" Type="Str">My Computer\client lib.lvlib\EPICS Client1\</Property>

@@ -2,7 +2,7 @@
 <Project Type="Project" LVVersion="20008000">
 	<Property Name="varPersistentID:{50583AD0-25EE-4FE7-8260-8198717B734D}" Type="Ref">/My Computer/client lib.lvlib/Ysize</Property>
 	<Property Name="varPersistentID:{5B07326F-8780-4220-932E-9EB400C63F2A}" Type="Ref">/My Computer/client lib.lvlib/Ybin</Property>
-	<Property Name="varPersistentID:{B9D62F9D-8887-4287-A76F-F9EACE15EE58}" Type="Ref">/My Computer/client lib.lvlib/CPProjectionData</Property>
+	<Property Name="varPersistentID:{C26E8801-F9EA-4FB0-B54E-1E8A711C8CC9}" Type="Ref">/My Computer/client lib.lvlib/VAL</Property>
 	<Property Name="varPersistentID:{E4FD9F93-1D24-4950-8E06-7FEBC642E08C}" Type="Ref">/My Computer/client lib.lvlib/Xbin</Property>
 	<Property Name="varPersistentID:{EB087FAA-D366-4C25-8B1F-381063F9657A}" Type="Ref">/My Computer/client lib.lvlib/Xsize</Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -29,6 +29,7 @@
 		<Item Name="EPICS_test.vi" Type="VI" URL="../EPICS_test.vi"/>
 		<Item Name="gauss.vi" Type="VI" URL="../subvi/gauss.vi"/>
 		<Item Name="METIS_main_004.vi" Type="VI" URL="../METIS_main_004.vi"/>
+		<Item Name="METIS_main_005.vi" Type="VI" URL="../METIS_main_005.vi"/>
 		<Item Name="METIS_TestIOC.vi" Type="VI" URL="../METIS_TestIOC.vi"/>
 		<Item Name="METIS_TestIOC_simple.vi" Type="VI" URL="../METIS_TestIOC_simple.vi"/>
 		<Item Name="Newport ESP301.lvlib" Type="Library" URL="../libraries/Newport ESP301/Newport ESP301.lvlib"/>
